@@ -1,0 +1,61 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>contact us | human after all | robots and movies</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header>
+		<div id="logo_top">
+		<a class="nav_logo" href="index.html"><img src="img/logo_human_after_all.png" alt="human after all logo" width="200" /></a> 
+		</div>
+		<nav id="nav_top">
+			<ul>
+				<li><a class="nav_link" href="index.html#robots">robots</a></li>
+				<li><a class="nav_link" href="history.html">history</a></li>
+				<li><a class="nav_link" href="project.html">project</a></li>
+				<li><a class="nav_link" href="index.html#more_info">more</a></li>
+				<li><a class="nav_link nav_visiting" href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="section_body section_body_long_mobile">
+		<div class="section_box purple_box">
+		<h1>contact us</h1>
+		</div>
+		<div class="three_col_h_transp">
+			<h2>We’d love to hear from you!</h2>
+		</div>
+		<div class="left_col">
+			<p>If you have any questions or even a suggestion, we’re open to hearing them all.</p>
+			<p>We’re not robots (sadly), but you should expect a response from us within 24 hours tops. Just fill out your details on the form and we'll get back with an answer.</p>
+		</div>
+		<div class="right_col">
+			<form method="POST" action="#">
+				<label>Name*</label>
+				<input type="text" name="name" placeholder="Your name" required>
+				<label>Birth date</label>
+				<input type="date" name="birth_date" min="1910-01-01" max="2015-01-01">
+				<label>Country</label>
+				<select id="country" name="Your country">
+					<option value="australia">Argentina</option>
+					<option value="canada">Canada</option>
+					<option value="usa">USA</option>
+					<option value="usa">Another planet</option>
+				</select>
+				<label>Favorite robot</label>
+				<input type="text" name="favorite robot" placeholder="Your favorite robot">
+				<label>E-mail*</label>
+				<input type="email" name="email" placeholder="Your e-mail" required>
+				<label>Message*</label>
+				<textarea name="msg" rows="6" required placeholder="Your message" maxlength="500"></textarea>
+				<input type="submit" class="button" value="send">
+			</form>		
+		</div>
+	</section>
+	<footer>(c) 2020. human after all &#9829;
+	</footer>
+</body>
+</html>
