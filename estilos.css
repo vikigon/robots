@@ -674,7 +674,7 @@ p, label {
 }
 
 ol {
-	font-size: 12px;
+	font-size: 10px;
 }
 
 header {
@@ -920,7 +920,11 @@ header {
 	height: auto;
 	background-image: none;
 
-} 
+}
+
+ol {
+	font-size: 12px;
+}
 
 #logo_top {
 	display: block;
