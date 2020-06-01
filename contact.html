@@ -3,7 +3,8 @@
 <head>
 	<title>contact us | human after all | robots and movies</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -35,7 +36,7 @@
 		<div class="right_col">
 			<form method="POST" action="#">
 				<label>Name*</label>
-				<input type="text" name="name" placeholder="Your name" required>
+				<input type="text" name="name" placeholder="Your name" pattern="[A-Za-z\s]{2,50}" title="Only between 2 and 50 letters allowed" required>
 				<label>Birth date</label>
 				<input type="date" name="birth_date" min="1910-01-01" max="2015-01-01">
 				<label>Country</label>
@@ -46,12 +47,12 @@
 					<option value="usa">Another planet</option>
 				</select>
 				<label>Favorite robot</label>
-				<input type="text" name="favorite robot" placeholder="Your favorite robot">
+				<input type="text" name="favorite robot" placeholder="Your favorite robot" pattern="[A-Za-z0-9-\s]{2,30}" title="Only between 2 and 30 letters and numbers allowed">
 				<label>E-mail*</label>
 				<input type="email" name="email" placeholder="Your e-mail" required>
 				<label>Message*</label>
-				<textarea name="msg" rows="6" required placeholder="Your message" maxlength="500"></textarea>
-				<input type="submit" class="button" value="send">
+				<textarea name="msg" rows="6" placeholder="Your message" maxlength="500" required></textarea>
+				<input type="submit" class="button" value="send" onclick="thanksMessage()">
 			</form>		
 		</div>
 	<script type="text/javascript" src="js/contact_us_script.js"></script>

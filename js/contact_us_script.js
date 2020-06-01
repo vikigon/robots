@@ -49,3 +49,12 @@ else {
 
 	document.getElementById("fav_robot").appendChild(noFavRobot)
 }
+
+
+// Se visualiza un mensaje de agradecimiento cuando el usuario envía el formulario satisfactoriamente
+
+function thanksMessage() {
+alert("Thank you for your message! The robots will answer you shortly. 🤖");
+}
+
+

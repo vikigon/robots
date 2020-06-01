@@ -181,12 +181,17 @@ input:focus {
 	border: 1px solid #3500c6; /* interdimensional blue */
 }
 
+
+input:invalid, textarea:invalid {
+background: #f2c4bf;
+}
+
 select option{
 	background-color: #213def; /* palatinate blue */
 	color: #fcfcfc; /* baby powder */
 }
 
-.button {
+input[type="submit" i] {
 	width: 335px;
 	background-color: #ff9549;
 	font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -197,6 +202,22 @@ select option{
 	border-radius: 0;
 	-webkit-border-radius: 0;
 	-webkit-appearance: 0;
+}
+
+.button {
+	height: 40px;
+	width: 335px;
+	background-color: #ff9549;
+	font-family: Roboto, Helvetica, Arial, sans-serif;
+	color: #fcfcfc; /* baby powder */
+	box-shadow: 5px 5px #4d4d4d1a; /* dark grey liver */
+	transition-duration: 0.2s;
+	margin-top: 30px;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: 0;
+	border-style: none;
+	border-color: transparent;
 }
 
 .button:hover {
@@ -223,8 +244,8 @@ select option{
 #banner_top {
 	width: 960px;
 	height: 560px;
-	/*background-image: url("img/home_circuit_board.png")*/
-	background-image: url("img/home_circuit_board.png"),linear-gradient(-90deg, #3500c6, #213def); /* interdimensional to palatinate blue */
+	/*background-image: url('../img/home_circuit_board.png')*/
+	background-image: url('../img/home_circuit_board.png'),linear-gradient(-90deg, #3500c6, #213def); /* interdimensional to palatinate blue */
 	clear: both;
 }
 
@@ -263,7 +284,7 @@ p.home_txt {
 .col1 {
 	background-color: #213def; /* palatinate blue */
 	float: left;
-	/*background-image: url(img/home_bicentennial_man.jpg);
+	/*background-image: url(../img/home_bicentennial_man.jpg);
 	background-size: contain;*/
 
 }
@@ -307,7 +328,7 @@ a.home_link:hover {
 	clear: both;
 	margin-top: 5px;
 	position: relative;
-	background-image: url(img/home_star_wars.jpg);
+	background-image: url('../img/home_star_wars.jpg');
 	background-size: 100%;
 }
 
@@ -318,7 +339,7 @@ a.home_link:hover {
 	clear: both;
 	margin-top: 5px;
 	position: relative;
-	background-image: url(img/home_wall_e.jpg);
+	background-image: url('../img/home_wall_e.jpg');
 	background-size: 100%;
 }
 
@@ -410,7 +431,7 @@ a.col_text:hover {
 
 .section_body {
 	width: 960px;
-	height: 1300px;
+	height: 1460px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
@@ -430,17 +451,17 @@ a.col_text:hover {
 .cyan_box {
 	background: #02a0ef; /* fallback */
 	background: #02a0efe6; /* vivid cerulean */
-	background-image: url("img/home_circuit_board.png")
+	background-image: url('../img/home_circuit_board.png')
 }
 
 .purple_box {
 	background: #3500c6; /* fallback */
 	background: #3500c6e6; /* interdimensional blue */
-	background-image: url("img/home_circuit_board.png")
+	background-image: url('../img/home_circuit_board.png')
 }
 
 .orange_box {
-	background-image: url("img/home_circuit_board.png")
+	background-image: url('../img/home_circuit_board.png')
 }
 
 
@@ -486,6 +507,12 @@ video {
 	border: 5px solid #4d4d4d;
 	}
 
+p.quote {
+	font-size: 16px;
+	padding-top: 40px;
+	font-style: italic;
+}
+
 /*---------------project---------------*/
 
 div.animated_title_box {
@@ -501,7 +528,7 @@ div#face {
 	width: 150px;
 	height: 200px;
 	position: relative;
-	margin: 15% auto auto auto;
+	margin: 23% auto auto auto;
 }
 
 div.eye_left {
@@ -631,7 +658,7 @@ div#animated_project_box_g {
 
 @keyframes project_box_g {
 	0%	{left: 48%; bottom: 0; }
-	100% {left: 48%; bottom: 17.7%;}
+	100% {left: 48%; bottom: 22.2%;}
 }
 
 
@@ -795,7 +822,7 @@ a.col_text {
 
 .section_body {
 	width: 580px;
-	height: 800px;
+	height: 1100px;
 }
 
 .section_body_long_mobile {
@@ -836,13 +863,19 @@ video {
 	border: 5px solid #4d4d4d;
 	}
 
+p.quote {
+	font-size: 14px;
+	padding-top: 40px;
+	font-style: italic;
+}
+
 /*---------------project---------------*/
 
 
 div#face {
 	width: 100px;
 	height: 100px;
-	margin: 15% auto auto auto;
+	margin: 26% auto auto auto;
 }
 
 div.eye_left {
@@ -881,7 +914,7 @@ div#animated_project_box_g {
 
 @keyframes project_box_g {
 	0%	{left: 47.6%; bottom: 0; }
-	100% {left: 47.6%; bottom: 23.5%;}
+	100% {left: 47.6%; bottom: 26.8%;}
 }
 
 /*---------------contact---------------*/
@@ -983,6 +1016,11 @@ footer {
 
 input, select, textarea {
 	width: 100%;
+}
+
+
+input[type="submit" i] {
+    width: 100%;
 }
 
 .button {
@@ -1189,7 +1227,7 @@ div#animated_project_box_f {
 	animation-duration: 0s;
 	animation-fill-mode: none;
 	top: 92%;
-	left: 22.5%;
+	left: 22.3%;
 	position: absolute;
 }
 
@@ -1199,7 +1237,7 @@ div#animated_project_box_g {
 	animation-duration: 0s;
 	animation-fill-mode: none;
 	top: 92%;
-	right: 22.5%;
+	right: 22.3%;
 	position: absolute;
 }
 
