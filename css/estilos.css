@@ -865,8 +865,6 @@ video {
 
 p.quote {
 	font-size: 14px;
-	padding-top: 40px;
-	font-style: italic;
 }
 
 /*---------------project---------------*/
@@ -1131,7 +1129,7 @@ a.col_text {
 }
 
 .section_body_long_mobile {
-	height: 1400px;
+	height: 1500px;
 }
 
 div.three_col_h_transp {
@@ -1165,6 +1163,9 @@ div.right_col {
 video {
 	width: 90%;
 	}
+
+p.quote {
+	font-size: 12px;
 
 /*---------------project---------------*/
 
