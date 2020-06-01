@@ -27,14 +27,14 @@
 		<h1>contact us</h1>
 		</div>
 		<div class="three_col_h_transp">
-			<h2>We’d love to hear from you!</h2>
+			<h2>We'd love to hear from you!</h2>
 		</div>
 		<div class="left_col" id="fav_robot">
-			<p>If you have any questions or even a suggestion, we’re open to hearing them all.</p>
-			<p>We’re not robots (sadly), but you should expect a response from us within 24 hours tops. Just fill out your details on the form and we'll get back with an answer.</p>
+			<p>If you have any questions or even a suggestion, we're open to hearing them all.</p>
+			<p>We're not robots (sadly), but you should expect a response from us within 24 hours tops. Just fill out your details on the form and we'll get back with an answer.</p>
 		</div>
 		<div class="right_col">
-			<form method="POST" action="#">
+			<form action="#" onsubmit="thanksMessage(event)">
 				<label>Name*</label>
 				<input type="text" name="name" placeholder="Your name" pattern="[A-Za-z\s]{2,50}" title="Only between 2 and 50 letters allowed" required>
 				<label>Birth date</label>
@@ -52,7 +52,7 @@
 				<input type="email" name="email" placeholder="Your e-mail" required>
 				<label>Message*</label>
 				<textarea name="msg" rows="6" placeholder="Your message" maxlength="500" required></textarea>
-				<input type="submit" class="button" id="submit_button" value="send" onsubmit="thanksMessage()">
+				<input type="submit" class="button">
 			</form>		
 		</div>
 	<script type="text/javascript" src="js/contact_us_script.js"></script>
