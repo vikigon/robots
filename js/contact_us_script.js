@@ -54,7 +54,12 @@ else {
 // Se visualiza un mensaje de agradecimiento cuando el usuario envía el formulario satisfactoriamente
 
 function thanksMessage() {
-alert("Thank you for your message! The robots will answer you shortly. 🤖");
+	
+	var submitButton = document.getElementById("submit_button")
+
+	if (submitButton.checkValidity()) {
+		alert("Thank you for your message! The robots will answer you shortly. 🤖");
+		}
 }
 
 
