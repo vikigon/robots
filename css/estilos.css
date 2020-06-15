@@ -5,7 +5,7 @@
 	src: url(fonts/VictorMono-Regular.ttf) format('truetype');
 }
 
-ul {
+ul, nav#nav_video {
 	margin: 0;
     padding: 0;
     list-style-type: none;
@@ -113,6 +113,26 @@ header {
 	display: inline-block;
 	float: right;
 }
+
+nav#nav_video {
+	margin: 2% 5% 5% 5%;
+
+}
+
+a.nav_video_link {
+	width: 20px;
+	height: 20px; 
+	background-color: #02a0ef; /*vivid cerulean*/ 
+	font-size: 30px;
+	color: #fcfcfc; /* baby powder */
+	margin: 0;
+	padding: 9px 3px 3px 3px;
+	box-sizing: border-box;
+	}
+
+a.nav_video_link:hover {
+	background-color: #0086c9; /*vivid cerulean*/ 
+	}
 
 a.nav_logo:hover {
 	text-decoration: none;
@@ -502,7 +522,7 @@ div.right_col {
 
 video {
 	width: 860px;
-	margin: 5%;
+	margin: 5% 5% 0 5%;
 	display: block;
 	border: 5px solid #4d4d4d;
 	}
@@ -697,11 +717,11 @@ h3 {
 }
 
 p, label {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 ol {
-	font-size: 10px;
+	font-size: 12px;
 }
 
 header {
@@ -728,6 +748,12 @@ a.nav_link {
 	font-size: 13px;
 }
 
+a.nav_video_link {
+	width: 15px;
+	height: 15px; 
+	font-size: 20px;
+	padding: 6px 3px 3px 3px;
+	}
 
 footer {
 	width: 580px;
@@ -740,6 +766,10 @@ footer {
 input, select, textarea {
 	width: 240px;
 	min-height: 30px;
+}
+
+input[type="submit" i] {
+	width: 240px;
 }
 
 .button {
@@ -822,7 +852,7 @@ a.col_text {
 
 .section_body {
 	width: 580px;
-	height: 1100px;
+	height: 1300px;
 }
 
 .section_body_long_mobile {
@@ -1003,6 +1033,13 @@ a.nav_visiting {
 	background-color: #3500c6; /*interdimensional blue*/
 	border-bottom: 3px solid #fcfcfc; /* baby powder */
 }
+
+a.nav_video_link {
+	width: 15px;
+	height: 15px; 
+	font-size: 20px;
+	padding: 6px 3px 3px 3px;
+	}
 
 footer {
 	width: 90%;

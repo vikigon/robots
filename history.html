@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -27,9 +28,17 @@
 			<div class="section_box cyan_box">
 			<h1>robot history</h1>
 			</div>
-			<video controls poster="img/video_thumb.jpg">
+			<video poster="img/video_thumb.jpg" id="history_video">
 			<source src="video/history_robots.mp4" type="video/mp4">
 			<source src="video/history_robots.ogv" type="video/ogg">Sorry! Your browser does not support HTML 5 videos</video>
+			<nav id="nav_video">
+				<ul>
+					<li><a class="nav_video_link" href="#history_video" id="play" onclick="playVideo()"><span class="icon-play"></a></li>
+					<li><a class="nav_video_link" href="#history_video" onclick="skipVideo(-5)"><span class="icon-fast-backward"></a></li>
+					<li><a class="nav_video_link" href="#history_video" onclick="skipVideo(5)"><span class="icon-fast-forward"></a></li>
+					<li><a class="nav_video_link" href="#history_video" onclick="stopVideo()"><span class="icon-stop"></a></li>
+				</ul>
+			</nav>
 			<article>
 				<div class="three_col_h_transp">
 					<h2>Robots are older than you might think</h2>				
@@ -56,6 +65,7 @@
 		</div>
 	</section>
 	<script type="text/javascript" src="js/history_script.js"></script>
+	<script type="text/javascript" src="js/video_control.js"></script>
 	<footer>(c) 2020. human after all &#9829;
 	</footer>
 </body>
