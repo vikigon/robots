@@ -1,7 +1,7 @@
 /*---------------all---------------*/
 
 @font-face {
-	font-family: victor mono, courier, courier new, monospace;
+	font-family: "victor mono", courier, "courier new", monospace;
 	src: url(fonts/VictorMono-Regular.ttf) format('truetype');
 }
 
@@ -16,9 +16,8 @@ ul li {
 }
 
 ol {
-	font-family: victor mono, courier, courier new, monospace;
+	font-family: "victor mono", courier, "courier new", monospace;
 	font-size: 14px;
-	padding-inline-start: 0;
 	margin-left: 25px;
 	color: #4d4d4d;
 	list-style-type: lower-roman;
@@ -38,7 +37,7 @@ img {
 }
 
 h1 {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	font-weight: bold;
 	letter-spacing: 5px;
 	font-size: 50px;
@@ -49,7 +48,7 @@ h1 {
 }
 
 h2 {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	color: #fcfcfc; /* baby powder */
 	font-size: 18px;
 	background-color: #ff9549;
@@ -59,7 +58,7 @@ h2 {
 }
 
 h3 {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	color: #fcfcfc; /* baby powder */
 	font-size: 16px;
 	margin: 0 0 15px 0;
@@ -69,11 +68,11 @@ p, label {
 	color: #4d4d4d;
 	font-size: 14px;
 	margin-top: 0;
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 }
 
 a {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	color: #fcfcfc; /* baby powder */
 	text-align: center;
 	text-decoration: none;
@@ -153,6 +152,9 @@ a.nav_link {
 }
 
 a.nav_link:hover {
+	transition-property: all; 
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
 	text-decoration: none;
 	border-bottom: 5px solid #ff9549;
 }
@@ -289,7 +291,7 @@ div#banner_box {
 }
 
 p.home_txt {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	color: #fcfcfc; /* baby powder */
 	font-size: 16px;
 }
@@ -302,20 +304,17 @@ p.home_txt {
 }
 
 .col1 {
-	background-color: #213def; /* palatinate blue */
+	background-color: #fff;
 	float: left;
-	/*background-image: url(../img/home_bicentennial_man.jpg);
-	background-size: contain;*/
-
 }
 
 .col2 {
-	background-color: #213def; /* palatinate blue */
+	background-color: #fff;
 	float: left;
 }
 
 .col3 {
-	background-color: #213def; /* palatinate blue */
+	background-color: #fff;
 	float: right;
 }
 
@@ -329,7 +328,7 @@ p.home_txt {
 }
 
 .home_link {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	font-size: 25px;
 	text-align: center;
 	color: #fcfcfc; /* baby powder */
@@ -337,6 +336,9 @@ p.home_txt {
 }
 
 a.home_link:hover {
+	transition-property: all; 
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
 	text-decoration: none;
 	border-bottom: 4px solid #ff9549;
 }
@@ -344,7 +346,7 @@ a.home_link:hover {
 #project {
 	width: 960px;
 	height: 400px;
-	background-color: #0e8a2c;
+	background-color: #fff;
 	clear: both;
 	margin-top: 5px;
 	position: relative;
@@ -401,15 +403,30 @@ a.col_text {
 	left: 0;
 	bottom: 0;
 	line-height: 100px;
-	background: #3500c6; /* fallback*/
+	background: #3500c6; /* fallback */
 	background: #3500c6e6; /* interdimensional blue */
 }
 
 
 a.col_text:hover {
+	transition-property: all; 
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
 	text-decoration: none;
-	border-bottom: 5px solid #ff9549;
+	background: #02a0ef; /* fallback */
+	background: #213defe6; /* palatinate blue */
+/*	border-bottom: 5px solid #ff9549;*/
 	box-sizing: border-box;
+}
+
+.opacity_effect {
+	opacity: 0.8;
+}
+
+.opacity_effect:hover {
+	transition: all;
+	transition-duration: 1s;
+	opacity: 1;
 }
 
 
@@ -434,7 +451,7 @@ a.col_text:hover {
 }
 
 .overlay_txt {
-	font-family: victor mono, courier new, courier, monospace;
+	font-family: "victor mono", "courier new", courier, monospace;
 	color: #fcfcfc; /* baby powder */
 	font-size: 18px;
 	position: absolute;
@@ -475,6 +492,10 @@ a.col_text:hover {
 	height: none;
 }
 
+.section_body_history_mobile {
+	height: none;
+}
+
 .section_body_xlong_mobile {
 	height: none;
 }
@@ -497,7 +518,9 @@ a.col_text:hover {
 }
 
 .orange_box {
-	background-image: url('../img/home_circuit_board.png')
+	background-image: url('../img/home_circuit_board.png');
+	background-color: #ff9549; /*fallback*/	
+	background-color: #ff9549e6; /*neon carrot*/	
 }
 
 
@@ -565,7 +588,7 @@ div#face {
 	width: 150px;
 	height: 200px;
 	position: relative;
-	margin: 23% auto auto auto;
+	margin: 22% auto auto auto;
 }
 
 div.eye_left {
@@ -634,7 +657,7 @@ div#animated_project_box_b {
 
 div#animated_project_box_c {
 	left: 37%;
-	top: 42%;
+	top: 44%;
 	animation-name: project_box_c;
 	animation-duration: 4s;
 	position: absolute;
@@ -654,8 +677,8 @@ div#animated_project_box_d {
 }
 
 @keyframes project_box_d {
-	0%	{left: 0; top: 42%; }
-	100% {left: 5%; top: 42%; transform: skew(-10deg, 0deg);}
+	0%	{left: 0; top: 44%; }
+	100% {left: 5%; top: 44%; transform: skew(-10deg, 0deg);}
 }
 
 div#animated_project_box_e {
@@ -666,8 +689,8 @@ div#animated_project_box_e {
 }
 
 @keyframes project_box_e {
-	0%	{right: 0; top: 42%; }
-	100% {right: 5%; top: 42%; transform: skew(10deg, 0deg);}
+	0%	{right: 0; top: 44%; }
+	100% {right: 5%; top: 44%; transform: skew(10deg, 0deg);}
 }
 
 div#animated_project_box_f {
@@ -678,8 +701,8 @@ div#animated_project_box_f {
 }
 
 @keyframes project_box_f {
-	0%	{left: 0; top: 64%; }
-	100% {left: 16%; top: 64%;}
+	0%	{left: 0; top: 68%; }
+	100% {left: 16%; top: 68%;}
 }
 
 
@@ -695,7 +718,7 @@ div#animated_project_box_g {
 
 @keyframes project_box_g {
 	0%	{left: 48%; bottom: 0; }
-	100% {left: 48%; bottom: 22.2%;}
+	100% {left: 48%; bottom: 15.2%;}
 }
 
 
@@ -707,8 +730,8 @@ div#animated_project_box_h {
 }
 
 @keyframes project_box_h {
-	0%	{right: 0; top: 64%; }
-	100% {right: 16%; top: 64%;}
+	0%	{right: 0; top: 68%; }
+	100% {right: 16%; top: 68%;}
 }
 
 /*---------------links---------------*/
@@ -721,10 +744,23 @@ div#animated_project_box_h {
 }
 
 .flex_box_links > div {
-	width: 300px;
+	width: 290px;
 	height: auto;
 	margin: 10px;
 	position: relative;
+}
+
+.cool_img {
+	border: 5px solid #213def;
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+.cool_img:hover {
+	transition: all;
+	transition-duration: 1s;
+	border: 5px solid #ff9549;
+	opacity: 0.75;
 }
 
 
@@ -890,10 +926,15 @@ a.col_text {
 
 .section_body_short {
 	width: 580px;
-	height: 1300px;
+	height: 800px;
 }
 
+
 .section_body_long_mobile {
+	height: none;
+}
+
+.section_body_history_mobile {
 	height: none;
 }
 
@@ -945,7 +986,7 @@ p.quote {
 div#face {
 	width: 100px;
 	height: 100px;
-	margin: 26% auto auto auto;
+	margin: 19% auto auto auto;
 }
 
 div.eye_left {
@@ -984,17 +1025,15 @@ div#animated_project_box_g {
 
 @keyframes project_box_g {
 	0%	{left: 47.6%; bottom: 0; }
-	100% {left: 47.6%; bottom: 26.8%;}
+	100% {left: 47.6%; bottom: 19.3%;}
 }
 
 /*---------------links---------------*/
 
 
 .flex_box_links > div {
-	width: 150px;
+	width: 170px;
 }
-
-
 
 } /* end @media 600-1023px */
 
@@ -1044,9 +1083,9 @@ ol {
 	box-sizing: border-box;
 	/* for box vertical align */
 	position: static;
-    margin: none;
+    margin: 0;
 	margin-top: 5px;
-	top: none;
+	top: 0;
 	background-image: linear-gradient(-90deg,#3500c6,#213def,#02a0ef,#ff9549);
 }
 
@@ -1132,7 +1171,6 @@ p.home_txt {
 	width: 100%;
 	height: auto;
 	margin-top: 3px;
-	position: none;
 }
 
 .col1 {
@@ -1222,6 +1260,10 @@ a.col_text {
 	height: 1500px;
 }
 
+.section_body_history_mobile {
+	height: 1300px;
+}
+
 .section_body_xlong_mobile {
 	height: 3400px;
 }
@@ -1260,6 +1302,7 @@ video {
 
 p.quote {
 	font-size: 12px;
+}
 
 /*---------------project---------------*/
 
@@ -1332,7 +1375,7 @@ div#animated_project_box_g {
 	animation-duration: 0s;
 	animation-fill-mode: none;
 	top: 92%;
-	right: 22.3%;
+	right: 22.5%;
 	position: absolute;
 }
 
@@ -1342,9 +1385,12 @@ div#animated_project_box_h {
 	animation-duration: 0s;
 	animation-fill-mode: none;
 	top: 92%;
-	right: 22.5%;
+	right: 22.3%;
 	position: absolute;
 }
+
+.flex_box_links > div {
+	width: 305px;
 
 
 } /* end @media < 600px */
