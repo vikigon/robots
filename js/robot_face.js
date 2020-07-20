@@ -2,7 +2,7 @@ var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var eyeRadius = 9;
 var eyeHeight = 60;
-var canvasCenterX = 100;
+var canvasCenterX = 200 / 2;
 
 // carita
 ctx.fillStyle = '#02a0ef';
