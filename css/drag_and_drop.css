@@ -76,4 +76,10 @@ div.three_col_h_transp_mobile_hide {
 	visibility: hidden;
 }
 
+.mobile_hide {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
 }
