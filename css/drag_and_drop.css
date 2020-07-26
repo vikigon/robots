@@ -30,12 +30,7 @@
 	margin: 20px;
 }
 
-
-}
-
-.flex_box_links > div {
-	width: 290px;
-	height: auto;
-	margin: 10px;
-	position: relative;
+.drag_and_drop_image {
+	width: auto;
+/*	position: relative;*/
 }
