@@ -30,7 +30,50 @@
 	margin: 20px;
 }
 
-.drag_and_drop_image {
-	width: auto;
-/*	position: relative;*/
+div.three_col_h_transp_mobile_hide {
+	width: 960px;
+	height: 70px;
+	text-align: center;
+	margin: auto;
+	padding: 0 50px 0 50px;
+	box-sizing: border-box;
+}
+
+@media all and (max-width: 599px) {
+
+#cajaimagenes {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border: none;
+} 
+
+#cajaimagenes img {
+	visibility: hidden;
+}
+
+#cajasoltar {
+	width: 0;
+	height: 0;
+	margin: 0;
+	border: none;
+} 
+
+#drag_drop_box {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: center;
+}
+
+.drag_and_drop_txt {
+	visibility: hidden;
+}
+
+div.three_col_h_transp_mobile_hide {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
 }
