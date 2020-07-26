@@ -470,7 +470,7 @@ a.col_text:hover {
 
 .section_body {
 	width: 960px;
-	height: 1700px;
+	height: 2300px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 5px;
@@ -760,12 +760,11 @@ a.col_text {
 
 .section_body {
 	width: 580px;
-	height: 1400px;
 }
 
 .section_body_short {
 	width: 580px;
-	height: 800px;
+	height: 1200px;
 }
 
 
@@ -1049,11 +1048,11 @@ a.col_text {
 }
 
 .section_body_long_mobile {
-	height: 1500px;
+	height: 1800px;
 }
 
 .section_body_history_mobile {
-	height: 1650px;
+	height: 2500px;
 }
 
 .section_body_xlong_mobile {

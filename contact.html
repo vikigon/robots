@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/file_selector.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -34,7 +35,7 @@
 			<p>We're not robots (sadly), but you should expect a response from us within 24 hours tops. Just fill out your details on the form and we'll get back with an answer.</p>
 		</div>
 		<div class="right_col">
-			<form action="#" onsubmit="thanksMessage(event)">
+			<form class="my-form" action="#" onsubmit="thanksMessage(event)">
 				<label>Name*</label>
 				<input type="text" name="name" placeholder="Your name" pattern="[A-Za-z\s]{2,50}" title="Only between 2 and 50 letters allowed" required>
 				<label>Birth date</label>
@@ -50,12 +51,24 @@
 				<input type="text" name="favorite robot" placeholder="Your favorite robot" pattern="[A-Za-z0-9-\s]{2,30}" title="Only between 2 and 30 letters and numbers allowed">
 				<label>E-mail*</label>
 				<input type="email" name="email" placeholder="Your e-mail" required>
-				<label>Message*</label>
+
+
+	<div id="drop-area">
+    <p>Upload images of your favorite robot with the button or by dragging and dropping them inside this dashed box</p>
+    <input type="file" id="fileElem" multiple accept="image/png,image/gif,image/jpeg" onchange="handleFiles(this.files)">
+    <label class="file_selector_button" for="fileElem">Upload your images</label>
+	<progress id="progress-bar" max=100 value=0></progress>
+	<div id="gallery"></div>
+	</div>
+
+	
+				<label>Message*</label>				
 				<textarea name="msg" rows="6" placeholder="Your message" maxlength="500" required></textarea>
 				<input type="submit" class="button">
 			</form>		
 		</div>
-	<script type="text/javascript" src="js/contact_us_script.js"></script>
+	<script type="text/javascript" src="js/contact_us.js"></script>
+	<script type="text/javascript" src="js/file_selector.js"></script>
 	</section>
 	<footer>(c) 2020. human after all &#9829;
 	</footer>
