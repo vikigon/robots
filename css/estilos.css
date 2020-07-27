@@ -535,8 +535,7 @@ div.three_col_h_transp {
 
 div.three_col_text_transp {
 	width: 960px;
-/*	height: 70px;
-*/	margin: 25px auto auto auto;
+	margin: 25px auto auto auto;
 	padding: 0 5% 0 5%;
 	box-sizing: border-box;
 }

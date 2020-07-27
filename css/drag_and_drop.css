@@ -39,6 +39,16 @@ div.three_col_h_transp_mobile_hide {
 	box-sizing: border-box;
 }
 
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+div.three_col_h_transp_mobile_hide {
+	width: 580px;
+    height: 55px;
+}
+
+}
+
 @media all and (max-width: 599px) {
 
 #cajaimagenes {
@@ -75,11 +85,5 @@ div.three_col_h_transp_mobile_hide {
 	height: 0;
 	visibility: hidden;
 }
-
-/*.mobile_hide {
-	width: 0;
-	height: 0;
-	visibility: hidden;
-}*/
 
 }
