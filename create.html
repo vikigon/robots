@@ -1,0 +1,93 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>a history of robots | human after all | robots and movies</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/icons.css">
+	<link rel="stylesheet" type="text/css" href="css/drag_and_drop.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<!-- <body onload="show()"> -->
+<body>
+	<header>
+		<div id="logo_top">
+		<a class="nav_logo" href="index.html"><img src="img/logo_human_after_all.png" alt="human after all logo" width="200" /></a> 
+		</div>
+		<nav id="nav_top">
+			<ul class="nav_ul">
+				<li><a class="nav_visiting" href="create.html">create</a></li>
+				<li><a class="nav_link" href="history.html">history</a></li>
+				<li><a class="nav_link" href="project.html">project</a></li>
+				<li><a class="nav_link" href="links.html">links</a></li>
+				<li><a class="nav_link" href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="section_body section_body_history_mobile ">
+		<div>
+			<div class="section_box cyan_box">
+			<h1>make your robot</h1>
+			</div>
+			<video poster="img/make_robot_thumb.jpg" id="history_video">
+			<source src="video/make_your_robot.mp4" type="video/mp4">
+			<source src="video/history_robots.ogv" type="video/ogg">Sorry! Your browser does not support HTML 5 videos</video>
+			<nav id="nav_video">
+				<ul>
+					<li><a class="nav_video_link" href="#history_video" id="play" onclick="playVideo()"><span class="icon-play"></a></li>
+					<li><a class="nav_video_link" href="#history_video" onclick="skipVideo(-5)"><span class="icon-fast-backward"></a></li>
+					<li><a class="nav_video_link" href="#history_video" onclick="skipVideo(5)"><span class="icon-fast-forward"></a></li>
+					<li><a class="nav_video_link" href="#history_video" onclick="stopVideo()"><span class="icon-stop"></a></li>
+				</ul>
+			</nav>
+			<article id="create_your_robot">
+				<div class="three_col_h_transp">
+					<h2>It's time to create your own robot!</h2>				
+				</div>
+				<div class="three_col_text_transp">
+					<p>Did you know you can easily create your own walking robot at home in just a few steps? Watch the video above to learn how. After that, you can make your own task list of the steps you'll need to take in order to create your own robotic creature. Good luck!</p>
+				</div>
+<!-- 				<div class="three_col_h_transp">
+					<h2>Robot creation checklist</h2>				
+				</div>
+				<div class="three_col_text_transp">
+					<ul id="bot_list">
+						<li class="checklist">Battery</li>
+						<li class="checklist">Plastic straw</li>
+					</ul>
+				<button class="button" onclick="save()">Save</button>
+				<button class="button" onclick="erase()">Erase</button>
+				</div> -->
+				<div class="three_col_text_transp">
+					<p>Create a list of all the tasks you will need to complete in order to create your own walking robot. Don't forget about buying the materials!</p>				
+				</div>
+
+				<div class="three_col_text_transp">
+					<form>
+						<label>Task number</label>
+						<input class="task_form" type="number" id="task_id" min="1" title="Only positive numbers allowed">
+						<label>Task description</label>
+						<input class="task_form" type="text" id="task_description">
+						<label>How important is the task?</label>
+						<select class="task_form" id="task_urgency">
+							<option value="very important">very important</option>
+							<option value="somewhat important">somewhat important</option>
+							<option value="not required">not required</option>
+						</select>
+						<label>Due date</label>
+						<input class="task_form" type="date" id="task_date">
+						<input type="button" class="button" id="save" value="Save task">
+					</form>
+					<div id="show_data">
+					</div>
+				</div>
+
+			</article>
+		</div>
+	</section>
+	<script type="text/javascript" src="js/video_control.js"></script>
+	<script type="text/javascript" src="js/checklist.js"></script>
+	<footer>(c) 2020. human after all &#9829;</footer>
+</body>
+</html>

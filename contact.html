@@ -15,11 +15,11 @@
 		</div>
 		<nav id="nav_top">
 			<ul>
-				<li><a class="nav_link" href="index.html#robots">robots</a></li>
+				<li><a class="nav_link" href="create.html">create</a></li>
 				<li><a class="nav_link" href="history.html">history</a></li>
 				<li><a class="nav_link" href="project.html">project</a></li>
 				<li><a class="nav_link" href="links.html">links</a></li>
-				<li><a class="nav_link nav_visiting" href="contact.html">contact</a></li>
+				<li><a class="nav_visiting" href="contact.html">contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -37,25 +37,25 @@
 		<div class="right_col">
 			<form class="my-form" action="#" onsubmit="thanksMessage(event)">
 				<label>Name*</label>
-				<input type="text" name="name" placeholder="Your name" pattern="[A-Za-z\s]{2,50}" title="Only between 2 and 50 letters allowed" required>
+				<input class="contact_form" type="text" name="name" placeholder="Your name" pattern="[A-Za-z\s]{2,50}" title="Only between 2 and 50 letters allowed" required>
 				<label>Birth date</label>
-				<input type="date" name="birth_date" min="1910-01-01" max="2015-01-01">
+				<input class="contact_form" type="date" name="birth_date" min="1910-01-01" max="2015-01-01">
 				<label>Country</label>
-				<select id="country" name="Your country">
+				<select class="contact_form" id="country" name="Your country">
 					<option value="australia">Argentina</option>
 					<option value="canada">Canada</option>
 					<option value="usa">USA</option>
-					<option value="usa">Another planet</option>
+					<option value="et">Another planet</option>
 				</select>
 				<label>Favorite robot</label>
-				<input type="text" name="favorite robot" placeholder="Your favorite robot" pattern="[A-Za-z0-9-\s]{2,30}" title="Only between 2 and 30 letters and numbers allowed">
+				<input class="contact_form" type="text" name="favorite robot" placeholder="Your favorite robot" pattern="[A-Za-z0-9-\s]{2,30}" title="Only between 2 and 30 letters and numbers allowed">
 				<label>E-mail*</label>
-				<input type="email" name="email" placeholder="Your e-mail" required>
+				<input class="contact_form" type="email" name="email" placeholder="Your e-mail" required>
 
 
 	<div id="drop-area">
     <p>Upload images of your favorite robot with the button or by dragging and dropping them inside this dashed box</p>
-    <input type="file" id="fileElem" multiple accept="image/png,image/gif,image/jpeg" onchange="handleFiles(this.files)">
+    <input class="contact_form" type="file" id="fileElem" multiple accept="image/png,image/gif,image/jpeg" onchange="handleFiles(this.files)">
     <label class="file_selector_button" for="fileElem">Upload your images</label>
 	<progress id="progress-bar" max=100 value=0></progress>
 	<div id="gallery"></div>
@@ -63,8 +63,8 @@
 
 	
 				<label>Message*</label>				
-				<textarea name="msg" rows="6" placeholder="Your message" maxlength="500" required></textarea>
-				<input type="submit" class="button">
+				<textarea class="contact_form" name="msg" rows="6" placeholder="Your message" maxlength="500" required></textarea>
+				<input type="submit" class="button" value="Send">
 			</form>		
 		</div>
 	<script type="text/javascript" src="js/contact_us.js"></script>
